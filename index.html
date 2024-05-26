@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rentify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Rentify</h1>
+    <nav>
+      <a href="#">Browse Properties</a>
+      <a href="#">Favorites</a>
+      <a href="#">My Properties</a>
+      <a href="#">Logout</a>
+    </nav>
+  </header>
+  <main>
+    <section id="buyer-dashboard">
+      <h2>Browse Properties</h2>
+      <div class="search-bar">
+        <input type="text" placeholder="Location">
+        <select name="price-range">
+          <option value="">Price Range</option>
+          <option value="low">Low to High</option>
+          <option value="high">High to Low</option>
+        </select>
+        <button>Search</button>
+      </div>
+      <ul class="properties-list">
+        <li>
+          <h3>123 Main Street</h3>
+          <p>2 bedrooms, 1 bathroom, $1,000/month</p>
+          <button class="like-button">Like</button>
+          <button>Contact Seller</button>
+        </li>
+      </ul>
+    </section>
+    <section id="seller-dashboard">
+      <h2>My Properties</h2>
+      <ul class="properties-list">
+        <li>
+          <h3>123 Main Street</h3>
+          <p>2 bedrooms, 1 bathroom, Available Now</p>
+          <button>Edit</button>
+          <button>Delete</button>
+        </li>
+      </ul>
+      <button>Post New Property</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
